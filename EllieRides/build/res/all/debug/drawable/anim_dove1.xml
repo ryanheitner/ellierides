@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/dove19c"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19a"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19c"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19a"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19c"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19a"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19c"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19a"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19c"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19a"
+        android:duration="200" />
+    <item
+        android:drawable="@drawable/dove19b"
+        android:duration="200" />
+</animation-list><!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/drawable/anim_dove1.xml -->

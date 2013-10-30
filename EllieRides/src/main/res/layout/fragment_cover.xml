@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/cover_layout"
+    android:background="@color/green"
+    android:orientation="vertical">
+    tools:context=".Main$DummySectionFragment">
+
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/readByMyselfButton"
+        android:paddingTop="@dimen/my_padding"
+        android:paddingBottom="@dimen/my_padding"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/read_by_myself" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/readToMeButton"
+        android:paddingTop="@dimen/my_padding"
+        android:paddingBottom="@dimen/my_padding"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/read_to_me" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/autoPlayButton"
+        android:paddingTop="@dimen/my_padding"
+        android:paddingBottom="@dimen/my_padding"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/autoplay_button" />
+
+    <Switch
+        android:text="Text"
+        android:id="@+id/hideTextSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/my_padding"
+        android:paddingBottom="@dimen/my_padding"
+        android:layout_gravity="center_horizontal"
+        android:textOn="Hide"
+        android:textOff="Show" />
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/parentButton"
+        android:paddingTop="@dimen/my_padding"
+        android:paddingBottom="@dimen/my_padding"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/parent_button" />
+</LinearLayout>
+
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.rh.ellierides.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <org.rh.ellierides.MyViewPager xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/textPager"
+        app:view_pager_type="@integer/text_viewpager"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="24"
+        tools:context=".Main">
+
+        <!--
+        This title strip will display the currently visible page title, as well as the page
+        titles for adjacent pages.
+        -->
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pager_title_strip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#33b5e5"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:textColor="#fff" />
+    </org.rh.ellierides.MyViewPager>
+
+    <org.rh.ellierides.MyViewPager
+        android:id="@+id/imagePager"
+        app:view_pager_type="@integer/image_viewpager"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="80">
+    </org.rh.ellierides.MyViewPager>r>
+
+
+</org.rh.ellierides.MyLinearLayout>
+<!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/layout-land/main.xml -->

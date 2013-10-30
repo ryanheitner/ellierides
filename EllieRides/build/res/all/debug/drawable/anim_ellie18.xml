@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+
+    <item
+        android:drawable="@drawable/ellie18d"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18e"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18f"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18a"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18b"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18c"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18d"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18e"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/ellie18f"
+        android:duration="100" />
+
+</animation-list><!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/drawable/anim_ellie18.xml -->

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/values-sw720dp-land/dimens.xml -->
+    <eat-comment />
+
+    <dimen name="activity_horizontal_margin">128dp</dimen>
+    <dimen name="my_padding">14dp</dimen>
+    <dimen name="small_horizontal_margin">16dp</dimen>
+    <dimen name="text_size">32dp</dimen>
+
+</resources>

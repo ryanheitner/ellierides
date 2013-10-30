@@ -1,0 +1,3 @@
+<cycleInterpolator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:cycles="20" />
+<!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/anim/cycle_20.xml -->

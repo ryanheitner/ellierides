@@ -1,0 +1,506 @@
+package org.rh.ellierides;
+
+import android.content.SharedPreferences;
+import android.content.res.AssetManager;
+import android.media.MediaPlayer;
+import android.os.Bundle;
+import android.os.Handler;
+import android.preference.PreferenceManager;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerTitleStrip;
+import android.support.v4.view.ViewPager;
+import android.util.Log;
+import android.view.Menu;
+import android.view.View;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.SequenceInputStream;
+import java.util.Enumeration;
+import java.util.Scanner;
+import java.util.Vector;
+
+
+public class Main extends FragmentActivity implements MediaPlayer.OnCompletionListener, ResumeDialogFragment.ResumeDialogListener, MyViewPager.PageChangeListener {
+
+
+    /**
+     * The {@link android.support.v4.view.PagerAdapter} that will provide
+     * fragments for each of the sections. We use a
+     * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
+     * will keep every loaded fragment in memory. If this becomes too memory
+     * intensive, it may be best to switch to a
+     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+     */
+    TextPagerAdapter textPagerAdapter;
+    ImagePagerAdapter imagePagerAdapter;
+    MediaPlayer mediaPlayer = null;
+    Integer pageNumberText, PageNumberImage;
+    private int phraseNumber;
+    public int[] firstLineOnPage;
+    SharedPreferences sharedPrefs;
+
+    /**
+     * The {@link ViewPager} that will host the section contents.
+     */
+    MyViewPager mTextViewPager;
+    MyViewPager mImageViewPager;
+    PagerTitleStrip titleStrip;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        new Handler().postDelayed(mLaunchTask, 5000);
+
+        setContentView(R.layout.main);
+
+
+        titleStrip = (PagerTitleStrip) findViewById(R.id.pager_title_strip);
+        titleStrip.setVisibility(View.GONE);
+
+        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        int loadPagesFlag = sharedPrefs.getInt(Constant.kFirstLineOnPage + "1", 0);
+        firstLineOnPage = new int[Constant.PAGES_TEXT + 1];
+        pageNumberText = 0;
+        PageNumberImage = 0;
+        if (loadPagesFlag <= 0) {
+            try {
+                createFirstLineonPage();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            firstLineOnPage = loadArray();
+        }
+
+
+        // Create the adapter that will return a fragment for each of the three
+        // primary sections of the app.
+        textPagerAdapter = new TextPagerAdapter(getSupportFragmentManager());
+        imagePagerAdapter = new ImagePagerAdapter(getSupportFragmentManager());
+
+        // Set up the ViewPager with the sections adapter.
+        mImageViewPager = (MyViewPager) findViewById(R.id.imagePager);
+//        mImageViewPager.setPagingEnabled(false); // rhe01);
+
+        mImageViewPager.setAdapter(imagePagerAdapter);
+        // This is the image
+        mImageViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+                Fragment fragment;
+                if (i > mImageViewPager.getCurrentItem()) {
+                    // get the current fragment i is the current page
+                    fragment = (Fragment) imagePagerAdapter.instantiateItem(mImageViewPager, i);
+                } else {
+                    fragment = (Fragment) imagePagerAdapter.instantiateItem(mImageViewPager, mImageViewPager.getCurrentItem());
+                }
+                if (fragment instanceof MyFragment) {
+                    ((MyFragment) fragment).stopAllAnimations();
+                    ((MyFragment) fragment).stopAllTimers();
+                }
+
+
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+//                if (i > 3) {
+//                    mImageViewPager.setOnTouchListener(new View.OnTouchListener() {
+//                        @Override
+//                        public boolean onTouch(View v, MotionEvent event) {
+//                            mImageViewPager.requestDisallowInterceptTouchEvent(false);
+//                            return true;
+//                        }
+//                    });
+//                }
+
+                PageNumberImage = i;
+                imagePagerAdapter.getItem(i).isVisible();
+
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+            }
+        }
+        );
+// This is the Text
+        mTextViewPager = (MyViewPager) findViewById(R.id.textPager);
+        mTextViewPager.setAdapter(textPagerAdapter);
+        mTextViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int i, float v, int i2) {
+
+            }
+
+            @Override
+            public void onPageSelected(int i) {
+                if (i > pageNumberText) {  // paging forward
+                    pageNumberText = i;
+                    if ((textPagerAdapter.getItem(i - 1) instanceof TextFragement)) {
+                        int newPage = Math.min(PageNumberImage + 1, imagePagerAdapter.getCount());
+                        if ((newPage != PageNumberImage) && (ModelController.isLastTextPageForImage(i - 1))) {
+                            mImageViewPager.setCurrentItem(newPage, true);
+                        } else {
+                            pageFlipSound();
+                        }
+                    } else if (i == 1) {
+                        mImageViewPager.setCurrentItem(1, false);
+                    }
+                    if mTextViewPager.get
+                } else {  // page back
+                    pageNumberText = i;
+                    if ((textPagerAdapter.getItem(i + 1) instanceof TextFragement)) {
+                        if ((ModelController.isFirstTextPageForImage(i + 1))) {
+                            mImageViewPager.setCurrentItem(PageNumberImage - 1, true);
+                        } else {
+                            pageFlipSound();
+                        }
+                    } else if (i == 1) {
+                        mImageViewPager.setCurrentItem(1, false);
+                    }
+                }
+                if (pageNumberText == 0) {
+                    titleStrip.setVisibility(View.GONE);
+                } else {
+                    titleStrip.setVisibility(View.VISIBLE);
+                    if (pageNumberText > 1) {
+                        writeNumberToSharedPrefs(Constant.kPageNumber, pageNumberText - 1);
+                    }
+                }
+
+            }
+
+
+
+            @Override
+            public void onPageScrollStateChanged(int i) {
+
+            }
+        });
+
+    }
+
+    private void pageFlipSound() {
+        if (mediaPlayer == null) {
+            mediaPlayer = new MediaPlayer();
+        } else {
+            try {
+                mediaPlayer.reset();
+            } catch (Exception e) {
+            }
+            mediaPlayer.release();
+        }
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.fx_page_turn);
+        mediaPlayer.start();
+    }
+
+    public void createFirstLineonPage() throws Exception {
+        AssetManager am = getAssets();
+        Vector v = new Vector(Constant.PAGES_TEXT);
+        for (int i = 0; i < Constant.PAGES_TEXT; i++) {
+            String fileName = "ellie" + i + ".txt";
+            InputStream is = am.open(fileName);
+            v.add(is);
+        }
+        Enumeration e = v.elements();
+        SequenceInputStream sis = new SequenceInputStream(e);
+        InputStreamReader isr = new InputStreamReader(sis);
+
+        Scanner scanner = new Scanner(isr).useDelimiter("\\s*[|]\\s*");
+        Integer lineNumber = 0;
+        int count = 0;
+        firstLineOnPage[0] = 0;
+        while (scanner.hasNext()) {
+            String line = scanner.next();
+            // clever way of finding how many occurences of a character in text
+            count += line.length() - line.replace("^", "").length();
+            lineNumber++;
+            firstLineOnPage[lineNumber] = count;
+
+        }
+        saveArray(firstLineOnPage);
+        // BufferedReader br = new BufferedReader(isr);
+        //while ((line = br.readLine()) != null) Log.d(Constant.TAG, line);
+        // br.close();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    public void onClickReadToMe(View view) {
+
+        phraseNumber = firstPhraseOnPage(pageNumberText);
+        readPhrase(phraseNumber);
+
+        // Set the page to just for testing rhe01
+        // mTextViewPager.setCurrentItem(2,true);
+    }
+
+    public void readPhrase(int phrase) {
+        int uri = getResources().getIdentifier("s_p" + phrase, "raw", getPackageName());
+        if (uri > 0) {
+            stopMediaPlayer();
+            mediaPlayer = MediaPlayer.create(this, uri);
+            mediaPlayer.start();
+            mediaPlayer.setOnCompletionListener(this);
+        }
+    }
+
+    public void stopMediaPlayer() {
+        if (mediaPlayer != null) {
+            try {
+                mediaPlayer.reset();
+            } catch (Exception e) {
+
+            }
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
+    }
+
+    public Integer firstPhraseOnPage(Integer page) {
+        if (page > Constant.PAGES_TEXT) {
+            return 9999;
+        }
+        return firstLineOnPage[page];
+    }
+
+    @Override
+    public void onCompletion(MediaPlayer mp) {
+
+
+
+/*
+if (scrollView == null) {
+scrollView = (ScrollView) findViewById(R.id.scroll_view);
+}
+scrollView.smoothScrollBy(100,0);
+*/
+        phraseNumber++;
+        if (phraseNumber < firstPhraseOnPage(pageNumberText + 1)) {
+            readPhrase(phraseNumber);
+        }
+    }
+
+    public void saveArray(int[] value) {
+        SharedPreferences.Editor mEdit = sharedPrefs.edit();
+
+        for (int i = 0; i < value.length; i++) {
+            mEdit.putInt(Constant.kFirstLineOnPage + i, value[i]);
+        }
+        mEdit.commit();
+    }
+
+    public int[] loadArray() {
+        int[] value = new int[Constant.PAGES_TEXT + 1];
+        for (int i = 0; i < Constant.PAGES_TEXT + 1; i++) {
+            String myString = Constant.kFirstLineOnPage + i;
+            value[i] = sharedPrefs.getInt(myString, 0);
+        }
+        return value;
+    }
+
+    /**
+     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
+     * one of the sections/tabs/pages.
+     */
+    public class ImagePagerAdapter extends FragmentStatePagerAdapter {
+        public ImagePagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+            Fragment fragment;
+            switch (position) {
+                case 0:
+                    fragment = new Page0Fragement();
+                    break;
+                case 1:
+                    fragment = new Page1Fragement();
+                    break;
+                case 2:
+                    fragment = new Page2Fragement();
+                    break;
+                case 3:
+                    fragment = new Page3Fragement();
+                    break;
+                case 4:
+                    fragment = new Page4Fragement();
+                    break;
+                case 5:
+                    fragment = new Page5Fragement();
+                    break;
+                case 6:
+                    fragment = new Page6Fragement();
+                    break;
+                case 7:
+                    fragment = new Page7Fragement();
+                    break;
+                case 8:
+                    fragment = new Page8Fragement();
+                    break;
+                case 9:
+                    fragment = new Page9Fragement();
+                    break;
+                case 10:
+                    fragment = new Page10Fragement();
+                    break;
+                case 11:
+                    fragment = new Page11Fragement();
+                    break;
+                case 12:
+                    fragment = new Page12Fragement();
+                    break;
+                case 13:
+                    fragment = new Page13Fragement();
+                    break;
+                case 14:
+                    fragment = new Page14Fragement();
+                    break;
+                case 15:
+                    fragment = new Page15Fragement();
+                    break;
+                case 16:
+                    fragment = new Page16Fragement();
+                    break;
+                case 17:
+                    fragment = new Page17Fragement();
+                    break;
+                case 18:
+                    fragment = new Page18Fragement();
+                    break;
+                case 19:
+                    fragment = new Page19Fragement();
+                    break;
+                case 20:
+                    fragment = new Page20Fragement();
+                    break;
+                case 21:
+                    fragment = new Page21Fragement();
+                    break;
+                case 22:
+                    fragment = new Page22Fragement();
+                    break;
+                case 23:
+                    fragment = new Page23Fragement();
+                    break;
+                case 24:
+                    fragment = new Page24Fragement();
+                    break;
+                default:
+                    return null;
+            }
+            Bundle args = new Bundle();
+            args.putInt(TextFragement.ARG_SECTION_NUMBER, position + 1);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public int getCount() {
+            return Constant.PAGES_IMAGE;
+        }
+    }
+
+    public class TextPagerAdapter extends FragmentPagerAdapter {
+
+        public TextPagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
+
+        @Override
+        public Fragment getItem(int position) {
+
+            // getItem is called to instantiate the fragment for the given page.
+            // Return a DummySectionFragment (defined as a static inner class
+            // below) with the page number as its lone argument.
+            Fragment fragment;
+            switch (position) {
+                case 0:
+                    fragment = new CoverFragement();
+                    break;
+                default:
+                    fragment = new TextFragement();
+
+            }
+            Bundle args = new Bundle();
+            args.putInt(TextFragement.ARG_SECTION_NUMBER, position);
+            fragment.setArguments(args);
+            return fragment;
+        }
+
+        @Override
+        public int getCount() {
+            return Constant.PAGES_TEXT;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            Integer pos;
+            pos = position;
+            return pos.toString();
+        }
+    }
+
+    private Runnable mLaunchTask = new Runnable() {
+        public void run() {
+            MediaPlayer.create(getApplicationContext(), R.raw.fxv_swipe).start();
+        }
+    };
+
+    @Override
+    public void onDialogPositiveClick(DialogFragment dialog) {
+        Log.d(Constant.TAG, "Resume Click");
+        mImageViewPager.setCurrentItem(getPageNumber(), true);
+    }
+
+    @Override
+    public void onDialogNegativeClick(DialogFragment dialog) {
+        Log.d(Constant.TAG, "Start Over");
+        mImageViewPager.setCurrentItem(1, true);
+        mTextViewPager.setCurrentItem(1, true);
+    }
+
+
+    @Override
+    public void onTextPageChangeIntercept(Boolean forward) {
+
+    }
+
+    @Override
+    public void onImagePageChangeIntercept(Boolean forward) {
+        if (forward) {
+            mTextViewPager.setCurrentItem(pageNumberText + 1, true);
+            Log.d(Constant.TAG, "forward" + pageNumberText);
+        } else {
+            mTextViewPager.setCurrentItem(pageNumberText - 1, true);
+            Log.d(Constant.TAG, "back" + pageNumberText);
+        }
+    }
+
+    private void writeNumberToSharedPrefs(String key, int number) {
+        SharedPreferences.Editor mEdit = sharedPrefs.edit();
+        mEdit.putInt(key, number);
+        mEdit.commit();
+    }
+
+    public int getPageNumber() {
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+        return sharedPrefs.getInt(Constant.kPageNumber, 0);
+    }
+
+
+}

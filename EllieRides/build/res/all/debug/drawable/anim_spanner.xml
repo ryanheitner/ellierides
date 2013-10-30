@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="true">
+    <item
+        android:drawable="@drawable/dad13"
+        android:duration="100" />
+    <item
+        android:drawable="@drawable/dad13b"
+        android:duration="400" />
+    <item
+        android:drawable="@drawable/dad13"
+        android:duration="100" />
+</animation-list><!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/drawable/anim_spanner.xml -->
