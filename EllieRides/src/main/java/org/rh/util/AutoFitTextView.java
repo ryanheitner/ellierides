@@ -3,21 +3,17 @@ package org.rh.util;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import org.rh.ellierides.R;
-
 public class AutoFitTextView extends TextView
 {
     private static final float THRESHOLD = 0.5f;
-
     private enum Mode { Width, Height, Both, None }
 
-    private int minTextSize = 20;
-    private int maxTextSize = 1000;
+    private int minTextSize = 15;
+    private int maxTextSize = 100;
 
     private Mode mode = Mode.None;
     private boolean inComputation;
@@ -35,10 +31,13 @@ public class AutoFitTextView extends TextView
     public AutoFitTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
-        TypedArray tAttrs = context.obtainStyledAttributes(attrs, R.styleable.AutoFitTextView, defStyle, 0);
-        maxTextSize = tAttrs.getDimensionPixelSize(R.styleable.AutoFitTextView_maxTextSize, maxTextSize);
-        minTextSize = tAttrs.getDimensionPixelSize(R.styleable.AutoFitTextView_minTextSize, minTextSize);
-        tAttrs.recycle();
+//        TypedArray tAttrs = context.obtainStyledAttributes(
+//                attrs, R.styleable.com_techdeals_ui_widget_AutoFitTextView, defStyle, 0);
+//        maxTextSize = tAttrs.getDimensionPixelSize(
+//                R.styleable.com_techdeals_ui_widget_AutoFitTextView_maxTextSize, maxTextSize);
+//        minTextSize = tAttrs.getDimensionPixelSize(
+//                R.styleable.com_techdeals_ui_widget_AutoFitTextView_minTextSize, minTextSize);
+//        tAttrs.recycle();
     }
 
     private void resizeText() {
@@ -120,13 +119,11 @@ public class AutoFitTextView extends TextView
         return minHeight;
     }
 
-    @SuppressWarnings("deprecation")
-    @Override
     public void setBackground(Drawable background) {
-        if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN)
-            super.setBackground(background);
-        else
-            setBackgroundDrawable(background);
+    /*if(Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN)
+        super.setBackground(background);
+    else*/
+        setBackgroundDrawable(background);
     }
 
     @Override
@@ -157,4 +154,5 @@ public class AutoFitTextView extends TextView
         this.maxTextSize = maxTextSize;
         resizeText();
     }
+
 }

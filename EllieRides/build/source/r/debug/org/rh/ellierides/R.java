@@ -39,7 +39,9 @@ public final class R {
         public static final int train=0x7f04001b;
     }
     public static final class attr {
-        /** <p>Must be an integer value, such as "<code>100</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -47,7 +49,9 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int maxTextSize=0x7f010000;
-        /** <p>Must be an integer value, such as "<code>100</code>".
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -344,31 +348,22 @@ containing a value of this type.
         public static final int star1=0x7f020109;
         public static final int star2=0x7f02010a;
         public static final int star3=0x7f02010b;
-        public static final int switch_bg_disabled_holo_light=0x7f02010c;
-        public static final int switch_bg_focused_holo_light=0x7f02010d;
-        public static final int switch_bg_holo_light=0x7f02010e;
-        public static final int switch_inner_holo_light=0x7f02010f;
-        public static final int switch_thumb_activated_holo_light=0x7f020110;
-        public static final int switch_thumb_disabled_holo_light=0x7f020111;
-        public static final int switch_thumb_holo_light=0x7f020112;
-        public static final int switch_thumb_pressed_holo_light=0x7f020113;
-        public static final int switch_track_holo_light=0x7f020114;
-        public static final int table2=0x7f020115;
-        public static final int table24=0x7f020116;
-        public static final int tap8=0x7f020117;
-        public static final int tap8b=0x7f020118;
-        public static final int thinkp5=0x7f020119;
-        public static final int tracks=0x7f02011a;
-        public static final int train=0x7f02011b;
-        public static final int tree=0x7f02011c;
-        public static final int tree19=0x7f02011d;
-        public static final int tree21=0x7f02011e;
-        public static final int tree21b=0x7f02011f;
-        public static final int truck=0x7f020120;
-        public static final int water=0x7f020121;
-        public static final int wheel12r=0x7f020122;
-        public static final int window=0x7f020123;
-        public static final int windowp6=0x7f020124;
+        public static final int table2=0x7f02010c;
+        public static final int table24=0x7f02010d;
+        public static final int tap8=0x7f02010e;
+        public static final int tap8b=0x7f02010f;
+        public static final int thinkp5=0x7f020110;
+        public static final int tracks=0x7f020111;
+        public static final int train=0x7f020112;
+        public static final int tree=0x7f020113;
+        public static final int tree19=0x7f020114;
+        public static final int tree21=0x7f020115;
+        public static final int tree21b=0x7f020116;
+        public static final int truck=0x7f020117;
+        public static final int water=0x7f020118;
+        public static final int wheel12r=0x7f020119;
+        public static final int window=0x7f02011a;
+        public static final int windowp6=0x7f02011b;
     }
     public static final class id {
         public static final int GridLayout1=0x7f0c000c;
@@ -1245,7 +1240,9 @@ containing a value of this type.
           attribute's value can be found in the {@link #AutoFitTextView} array.
 
 
-          <p>Must be an integer value, such as "<code>100</code>".
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form
@@ -1259,7 +1256,9 @@ containing a value of this type.
           attribute's value can be found in the {@link #AutoFitTextView} array.
 
 
-          <p>Must be an integer value, such as "<code>100</code>".
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
 theme attribute (in the form

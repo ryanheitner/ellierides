@@ -1,7 +1,7 @@
 <resources>
     <declare-styleable name="AutoFitTextView">
-        <attr name="maxTextSize" format="integer"/>
-        <attr name="minTextSize" format="integer"/>
+        <attr name="maxTextSize" format="dimension"/>
+        <attr name="minTextSize" format="dimension"/>
     </declare-styleable>
     <declare-styleable name="ViewPagerType">
         <attr name="view_pager_type" format="integer"/>
