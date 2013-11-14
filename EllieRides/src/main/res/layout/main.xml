@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--*********************************-->
-    <!--ignore this look at the landscape-->
-    <!--*********************************-->
-    <!---->
+
+    <org.rh.ellierides.MyViewPager xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/textPager"
+        app:view_pager_type="@integer/text_viewpager"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/weight_text"
+        tools:context=".Main">
+    </org.rh.ellierides.MyViewPager>
+
+    <org.rh.ellierides.MyViewPager
+        android:id="@+id/imagePager"
+        app:view_pager_type="@integer/image_viewpager"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="@integer/weight_image" >
+    </org.rh.ellierides.MyViewPager>
 </LinearLayout>

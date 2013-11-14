@@ -1,7 +1,6 @@
 package org.rh.util;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
@@ -28,16 +27,8 @@ public class AutoFitTextView extends TextView
         this(context, attrs, 0);
     }
 
-    public AutoFitTextView(Context context, AttributeSet attrs, int defStyle) {
+    private AutoFitTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
-//        TypedArray tAttrs = context.obtainStyledAttributes(
-//                attrs, R.styleable.com_techdeals_ui_widget_AutoFitTextView, defStyle, 0);
-//        maxTextSize = tAttrs.getDimensionPixelSize(
-//                R.styleable.com_techdeals_ui_widget_AutoFitTextView_maxTextSize, maxTextSize);
-//        minTextSize = tAttrs.getDimensionPixelSize(
-//                R.styleable.com_techdeals_ui_widget_AutoFitTextView_minTextSize, minTextSize);
-//        tAttrs.recycle();
     }
 
     private void resizeText() {

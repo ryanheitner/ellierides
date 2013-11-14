@@ -4,4 +4,6 @@
     <integer name="right">4</integer>
     <integer name="text_viewpager">1</integer>
     <integer name="image_viewpager">2</integer>
+    <integer name="weight_text">24</integer>
+    <integer name="weight_image">80</integer>
 </resources>

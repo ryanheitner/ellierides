@@ -1,506 +1,351 @@
-package org.rh.ellierides;
-
-import android.content.SharedPreferences;
-import android.content.res.AssetManager;
-import android.media.MediaPlayer;
-import android.os.Bundle;
-import android.os.Handler;
-import android.preference.PreferenceManager;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerTitleStrip;
-import android.support.v4.view.ViewPager;
-import android.util.Log;
-import android.view.Menu;
-import android.view.View;
-
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.SequenceInputStream;
-import java.util.Enumeration;
-import java.util.Scanner;
-import java.util.Vector;
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GridLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/cover"
+    tools:context=".GridLayoutActivity">
 
 
-public class Main extends FragmentActivity implements MediaPlayer.OnCompletionListener, ResumeDialogFragment.ResumeDialogListener, MyViewPager.PageChangeListener {
+</FrameLayout>
 
 
-    /**
-     * The {@link android.support.v4.view.PagerAdapter} that will provide
-     * fragments for each of the sections. We use a
-     * {@link android.support.v4.app.FragmentPagerAdapter} derivative, which
-     * will keep every loaded fragment in memory. If this becomes too memory
-     * intensive, it may be best to switch to a
-     * {@link android.support.v4.app.FragmentStatePagerAdapter}.
-     */
-    TextPagerAdapter textPagerAdapter;
-    ImagePagerAdapter imagePagerAdapter;
-    MediaPlayer mediaPlayer = null;
-    Integer pageNumberText, PageNumberImage;
-    private int phraseNumber;
-    public int[] firstLineOnPage;
-    SharedPreferences sharedPrefs;
 
-    /**
-     * The {@link ViewPager} that will host the section contents.
-     */
-    MyViewPager mTextViewPager;
-    MyViewPager mImageViewPager;
-    PagerTitleStrip titleStrip;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        new Handler().postDelayed(mLaunchTask, 5000);
-
-        setContentView(R.layout.main);
-
-
-        titleStrip = (PagerTitleStrip) findViewById(R.id.pager_title_strip);
-        titleStrip.setVisibility(View.GONE);
-
-        sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        int loadPagesFlag = sharedPrefs.getInt(Constant.kFirstLineOnPage + "1", 0);
-        firstLineOnPage = new int[Constant.PAGES_TEXT + 1];
-        pageNumberText = 0;
-        PageNumberImage = 0;
-        if (loadPagesFlag <= 0) {
-            try {
-                createFirstLineonPage();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        } else {
-            firstLineOnPage = loadArray();
-        }
-
-
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the app.
-        textPagerAdapter = new TextPagerAdapter(getSupportFragmentManager());
-        imagePagerAdapter = new ImagePagerAdapter(getSupportFragmentManager());
-
-        // Set up the ViewPager with the sections adapter.
-        mImageViewPager = (MyViewPager) findViewById(R.id.imagePager);
-//        mImageViewPager.setPagingEnabled(false); // rhe01);
-
-        mImageViewPager.setAdapter(imagePagerAdapter);
-        // This is the image
-        mImageViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-
+ View.OnTouchListener l = new View.OnTouchListener() {
             @Override
-            public void onPageScrolled(int i, float v, int i2) {
-                Fragment fragment;
-                if (i > mImageViewPager.getCurrentItem()) {
-                    // get the current fragment i is the current page
-                    fragment = (Fragment) imagePagerAdapter.instantiateItem(mImageViewPager, i);
-                } else {
-                    fragment = (Fragment) imagePagerAdapter.instantiateItem(mImageViewPager, mImageViewPager.getCurrentItem());
-                }
-                if (fragment instanceof MyFragment) {
-                    ((MyFragment) fragment).stopAllAnimations();
-                    ((MyFragment) fragment).stopAllTimers();
-                }
-
-
-            }
-
-            @Override
-            public void onPageSelected(int i) {
-//                if (i > 3) {
-//                    mImageViewPager.setOnTouchListener(new View.OnTouchListener() {
-//                        @Override
-//                        public boolean onTouch(View v, MotionEvent event) {
-//                            mImageViewPager.requestDisallowInterceptTouchEvent(false);
-//                            return true;
-//                        }
-//                    });
-//                }
-
-                PageNumberImage = i;
-                imagePagerAdapter.getItem(i).isVisible();
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int i) {
-            }
-        }
-        );
-// This is the Text
-        mTextViewPager = (MyViewPager) findViewById(R.id.textPager);
-        mTextViewPager.setAdapter(textPagerAdapter);
-        mTextViewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int i, float v, int i2) {
-
-            }
-
-            @Override
-            public void onPageSelected(int i) {
-                if (i > pageNumberText) {  // paging forward
-                    pageNumberText = i;
-                    if ((textPagerAdapter.getItem(i - 1) instanceof TextFragement)) {
-                        int newPage = Math.min(PageNumberImage + 1, imagePagerAdapter.getCount());
-                        if ((newPage != PageNumberImage) && (ModelController.isLastTextPageForImage(i - 1))) {
-                            mImageViewPager.setCurrentItem(newPage, true);
-                        } else {
-                            pageFlipSound();
+            public boolean onTouch(View view, MotionEvent event) {
+                if (navigate(event)) return true;
+                int action = event.getAction();
+                switch (action) {
+                    case MotionEvent.ACTION_DOWN:
+                        if ((touchedImage(matrixEllieDad, ellieDad1Layer, event) || (touchedImage(matrixEllieDad, ellieDad2Layer, event)))) {
+                            animateEllieDad();
+                        } else if (touchedImageBigger(matrixButterfly1f, butterfly1Layer, event, 25)) {
+                            animateButterfly1();
+                        } else if (touchedImageBigger(matrixButterfly2f, butterfly2Layer, event, 50)) { // allow a greater tolerance for touch
+                            animateButterfly2();
+                        } else if (touchedImageBigger(matrixSnail, snailLayer, event, 200)) { // allow a greater tolerance for touch
+                            animateSnail();
+                        } else if (touchedImage(matrixGrass, grassLayer, event)) {
+                            animateGrass(event);
                         }
-                    } else if (i == 1) {
-                        mImageViewPager.setCurrentItem(1, false);
-                    }
-                    if mTextViewPager.get
-                } else {  // page back
-                    pageNumberText = i;
-                    if ((textPagerAdapter.getItem(i + 1) instanceof TextFragement)) {
-                        if ((ModelController.isFirstTextPageForImage(i + 1))) {
-                            mImageViewPager.setCurrentItem(PageNumberImage - 1, true);
-                        } else {
-                            pageFlipSound();
-                        }
-                    } else if (i == 1) {
-                        mImageViewPager.setCurrentItem(1, false);
-                    }
+                        layeredImageView.invalidate();
+                        return true;
+                    case MotionEvent.ACTION_OUTSIDE:
+                    case MotionEvent.ACTION_UP:
+                    case MotionEvent.ACTION_CANCEL:
+                        return true;
                 }
-                if (pageNumberText == 0) {
-                    titleStrip.setVisibility(View.GONE);
+                return false;
+            }
+
+
+            private void animateGrass(MotionEvent event) {
+                final float xTouch = event.getX() ;
+                final float yTouch = event.getY() ;
+
+
+                Drawable drawable;
+                Random r = new Random();
+                int x = r.nextInt(7) + 1;
+                String fileName = "flower" + x;
+                int drawableResourceId = res.getIdentifier(fileName, "drawable", context.getPackageName());
+                drawable = res.getDrawable(drawableResourceId);
+                Assert.assertNotNull("Must no be null", drawable);
+
+                drawable.setBounds(0, 0, (int) (drawable.getIntrinsicWidth()), (int) (drawable.getIntrinsicHeight()));
+
+                final float[] values = new float[9];
+                matrixGrass.getValues(values);
+                float grassX = values[Matrix.MTRANS_X];
+                float grassY = values[Matrix.MTRANS_Y];
+
+
+                final Matrix matrixFlower = new Matrix();
+                float originX = (xTouch - (0.5f * drawable.getIntrinsicWidth())) * imageWidthProportion;
+                float originY = (yTouch - (0.5f * drawable.getIntrinsicHeight())) * imageHeightProportion;
+
+                float maxX = (grassX + grassLayer.getDrawable().getIntrinsicWidth() - (0.5f * drawable.getIntrinsicWidth())) ;
+                float maxY = (grassY + grassLayer.getDrawable().getIntrinsicHeight() - (0.5f * drawable.getIntrinsicHeight())) ;
+                originX = Math.min(originX, maxX);
+                originY = Math.min(originY, maxY);
+                matrixFlower.preTranslate(originX, originY);
+                layeredImageView.addLayer(1,drawable, matrixFlower);
+            }
+
+            private void animateSnail() {
+                final Runnable slide = new Runnable() {
+                    @Override
+                    public void run() {
+                        Animation snailAnim = AnimationUtils.loadAnimation(getActivity(), R.anim.snail);
+                        snailLayer.startLayerAnimation(snailAnim);
+                    }
+                };
+                slide.run();
+            }
+
+            private void animateEllieDad() {
+                if (!ellieDad1Layer.isOn()) {
+                    ellieDad2Layer.setAlpha(255);
+                    ellieDad1Layer.setAlpha(0);
                 } else {
-                    titleStrip.setVisibility(View.VISIBLE);
-                    if (pageNumberText > 1) {
-                        writeNumberToSharedPrefs(Constant.kPageNumber, pageNumberText - 1);
-                    }
+                    ellieDad2Layer.setAlpha(0);
+                    ellieDad1Layer.setAlpha(255);
                 }
-
+                ellieDad1Layer.setOn(!ellieDad1Layer.isOn());
+            }
+            private void animateButterfly1() {
+                private void animateButterfly1() {
+                    final float[] values = new float[9];
+                    matrixButterfly1.getValues(values);
+                    butterfly1Layer.setXoffset(30);
+                    matrixButterfly1 = butterfly1Layer.getMatrix();
+                    matrixButterfly1.getValues(values);
+                }
             }
 
 
+            private void animateButterfly2() {
+                countDownTimer2 = new CountDownTimer(30000, 200) {
+                    public void onTick(long millisUntilFinished) {
+                        final Runnable fly = new Runnable() {
+                            @Override
+                            public void run() {
+                                Random r = new Random();
+                                TranslateAnimation translateAnimation = new TranslateAnimation(0, r.nextInt(90) - 45, 0, r.nextInt(90) - 41);
+                                translateAnimation.setDuration(180);
+                                butterfly2Layer.startLayerAnimation(translateAnimation);
+                                butterfly2Layer.setFillAfter(true);
+                                Animation.AnimationListener animationListener = new Animation.AnimationListener() {
+                                    @Override
+                                    public void onAnimationStart(Animation animation) {
 
-            @Override
-            public void onPageScrollStateChanged(int i) {
+                                    }
 
+                                    @Override
+                                    public void onAnimationEnd(Animation animation) {
+
+                                    }
+
+                                    @Override
+                                    public void onAnimationRepeat(Animation animation) {
+                                    }
+                                };
+                                translateAnimation.setAnimationListener(animationListener);
+                            }
+                        };
+                        fly.run();
+                    }
+
+                    public void onFinish() {
+                    }
+                }.start();
             }
-        });
 
+
+        };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Minimum text size for this text view
+    public static final float MIN_TEXT_SIZE = 15;
+
+    // Interface for resize notifications
+    public interface OnTextResizeListener {
+        public void onTextResize(TextView textView, float oldSize, float newSize);
     }
 
-    private void pageFlipSound() {
-        if (mediaPlayer == null) {
-            mediaPlayer = new MediaPlayer();
-        } else {
-            try {
-                mediaPlayer.reset();
-            } catch (Exception e) {
-            }
-            mediaPlayer.release();
-        }
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.fx_page_turn);
-        mediaPlayer.start();
+    // Our ellipse string
+    private static final String mEllipsis = "...";
+
+    // Registered resize listener
+    private OnTextResizeListener mTextResizeListener;
+
+    // Flag for text and/or size changes to force a resize
+    private boolean mNeedsResize = false;
+
+    // Text size that is set from code. This acts as a starting point for resizing
+    private float mTextSize;
+
+    // Temporary upper bounds on the starting text size
+    private float mMaxTextSize = 0;
+
+    // Lower bounds for text size
+    private float mMinTextSize = MIN_TEXT_SIZE;
+
+    // Text view line spacing multiplier
+    private float mSpacingMult = 1.0f;
+
+    // Text view additional line spacing
+    private float mSpacingAdd = 0.0f;
+
+    // Add ellipsis to text that overflows at the smallest text size
+    private boolean mAddEllipsis = true;
+
+    // Default constructor override
+    public AutoSizeFontTextView(Context context) {
+        this(context, null);
     }
 
-    public void createFirstLineonPage() throws Exception {
-        AssetManager am = getAssets();
-        Vector v = new Vector(Constant.PAGES_TEXT);
-        for (int i = 0; i < Constant.PAGES_TEXT; i++) {
-            String fileName = "ellie" + i + ".txt";
-            InputStream is = am.open(fileName);
-            v.add(is);
-        }
-        Enumeration e = v.elements();
-        SequenceInputStream sis = new SequenceInputStream(e);
-        InputStreamReader isr = new InputStreamReader(sis);
-
-        Scanner scanner = new Scanner(isr).useDelimiter("\\s*[|]\\s*");
-        Integer lineNumber = 0;
-        int count = 0;
-        firstLineOnPage[0] = 0;
-        while (scanner.hasNext()) {
-            String line = scanner.next();
-            // clever way of finding how many occurences of a character in text
-            count += line.length() - line.replace("^", "").length();
-            lineNumber++;
-            firstLineOnPage[lineNumber] = count;
-
-        }
-        saveArray(firstLineOnPage);
-        // BufferedReader br = new BufferedReader(isr);
-        //while ((line = br.readLine()) != null) Log.d(Constant.TAG, line);
-        // br.close();
+    // Default constructor when inflating from XML file
+    public AutoSizeFontTextView(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-
-    public void onClickReadToMe(View view) {
-
-        phraseNumber = firstPhraseOnPage(pageNumberText);
-        readPhrase(phraseNumber);
-
-        // Set the page to just for testing rhe01
-        // mTextViewPager.setCurrentItem(2,true);
-    }
-
-    public void readPhrase(int phrase) {
-        int uri = getResources().getIdentifier("s_p" + phrase, "raw", getPackageName());
-        if (uri > 0) {
-            stopMediaPlayer();
-            mediaPlayer = MediaPlayer.create(this, uri);
-            mediaPlayer.start();
-            mediaPlayer.setOnCompletionListener(this);
-        }
-    }
-
-    public void stopMediaPlayer() {
-        if (mediaPlayer != null) {
-            try {
-                mediaPlayer.reset();
-            } catch (Exception e) {
-
-            }
-            mediaPlayer.release();
-            mediaPlayer = null;
-        }
-    }
-
-    public Integer firstPhraseOnPage(Integer page) {
-        if (page > Constant.PAGES_TEXT) {
-            return 9999;
-        }
-        return firstLineOnPage[page];
-    }
-
-    @Override
-    public void onCompletion(MediaPlayer mp) {
-
-
-
-/*
-if (scrollView == null) {
-scrollView = (ScrollView) findViewById(R.id.scroll_view);
-}
-scrollView.smoothScrollBy(100,0);
-*/
-        phraseNumber++;
-        if (phraseNumber < firstPhraseOnPage(pageNumberText + 1)) {
-            readPhrase(phraseNumber);
-        }
-    }
-
-    public void saveArray(int[] value) {
-        SharedPreferences.Editor mEdit = sharedPrefs.edit();
-
-        for (int i = 0; i < value.length; i++) {
-            mEdit.putInt(Constant.kFirstLineOnPage + i, value[i]);
-        }
-        mEdit.commit();
-    }
-
-    public int[] loadArray() {
-        int[] value = new int[Constant.PAGES_TEXT + 1];
-        for (int i = 0; i < Constant.PAGES_TEXT + 1; i++) {
-            String myString = Constant.kFirstLineOnPage + i;
-            value[i] = sharedPrefs.getInt(myString, 0);
-        }
-        return value;
+    // Default constructor override
+    public AutoSizeFontTextView(Context context, AttributeSet attrs, int defStyle) {
+        super(context, attrs, defStyle);
+        mTextSize = getTextSize();
     }
 
     /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
+     * When text changes, set the force resize flag to true and reset the text size.
+     * before and after is the length of the string
+    @Override
+    protected void onTextChanged(final CharSequence text, final int start, final int before, final int after) {
+        mNeedsResize = true;
+        // Since this view may be reused, it is good to reset the text size
+        resetTextSize();
+    }
+
+    /**
+     * Register listener to receive resize notifications
+     * @param listener
      */
-    public class ImagePagerAdapter extends FragmentStatePagerAdapter {
-        public ImagePagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            Fragment fragment;
-            switch (position) {
-                case 0:
-                    fragment = new Page0Fragement();
-                    break;
-                case 1:
-                    fragment = new Page1Fragement();
-                    break;
-                case 2:
-                    fragment = new Page2Fragement();
-                    break;
-                case 3:
-                    fragment = new Page3Fragement();
-                    break;
-                case 4:
-                    fragment = new Page4Fragement();
-                    break;
-                case 5:
-                    fragment = new Page5Fragement();
-                    break;
-                case 6:
-                    fragment = new Page6Fragement();
-                    break;
-                case 7:
-                    fragment = new Page7Fragement();
-                    break;
-                case 8:
-                    fragment = new Page8Fragement();
-                    break;
-                case 9:
-                    fragment = new Page9Fragement();
-                    break;
-                case 10:
-                    fragment = new Page10Fragement();
-                    break;
-                case 11:
-                    fragment = new Page11Fragement();
-                    break;
-                case 12:
-                    fragment = new Page12Fragement();
-                    break;
-                case 13:
-                    fragment = new Page13Fragement();
-                    break;
-                case 14:
-                    fragment = new Page14Fragement();
-                    break;
-                case 15:
-                    fragment = new Page15Fragement();
-                    break;
-                case 16:
-                    fragment = new Page16Fragement();
-                    break;
-                case 17:
-                    fragment = new Page17Fragement();
-                    break;
-                case 18:
-                    fragment = new Page18Fragement();
-                    break;
-                case 19:
-                    fragment = new Page19Fragement();
-                    break;
-                case 20:
-                    fragment = new Page20Fragement();
-                    break;
-                case 21:
-                    fragment = new Page21Fragement();
-                    break;
-                case 22:
-                    fragment = new Page22Fragement();
-                    break;
-                case 23:
-                    fragment = new Page23Fragement();
-                    break;
-                case 24:
-                    fragment = new Page24Fragement();
-                    break;
-                default:
-                    return null;
-            }
-            Bundle args = new Bundle();
-            args.putInt(TextFragement.ARG_SECTION_NUMBER, position + 1);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public int getCount() {
-            return Constant.PAGES_IMAGE;
-        }
+    public void setOnResizeListener(OnTextResizeListener listener) {
+        mTextResizeListener = listener;
     }
 
-    public class TextPagerAdapter extends FragmentPagerAdapter {
-
-        public TextPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a DummySectionFragment (defined as a static inner class
-            // below) with the page number as its lone argument.
-            Fragment fragment;
-            switch (position) {
-                case 0:
-                    fragment = new CoverFragement();
-                    break;
-                default:
-                    fragment = new TextFragement();
-
-            }
-            Bundle args = new Bundle();
-            args.putInt(TextFragement.ARG_SECTION_NUMBER, position);
-            fragment.setArguments(args);
-            return fragment;
-        }
-
-        @Override
-        public int getCount() {
-            return Constant.PAGES_TEXT;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            Integer pos;
-            pos = position;
-            return pos.toString();
-        }
-    }
-
-    private Runnable mLaunchTask = new Runnable() {
-        public void run() {
-            MediaPlayer.create(getApplicationContext(), R.raw.fxv_swipe).start();
-        }
-    };
-
+    /**
+     * Override the set text size to update our internal reference values
+     */
     @Override
-    public void onDialogPositiveClick(DialogFragment dialog) {
-        Log.d(Constant.TAG, "Resume Click");
-        mImageViewPager.setCurrentItem(getPageNumber(), true);
+    public void setTextSize(float size) {
+        super.setTextSize(size);
+        mTextSize = getTextSize();
     }
 
+    /**
+     * Override the set text size to update our internal reference values
+     */
     @Override
-    public void onDialogNegativeClick(DialogFragment dialog) {
-        Log.d(Constant.TAG, "Start Over");
-        mImageViewPager.setCurrentItem(1, true);
-        mTextViewPager.setCurrentItem(1, true);
+    public void setTextSize(int unit, float size) {
+        super.setTextSize(unit, size);
+        mTextSize = getTextSize();
     }
 
-
+    /**
+     * Override the set line spacing to update our internal reference values
+     */
     @Override
-    public void onTextPageChangeIntercept(Boolean forward) {
-
+    public void setLineSpacing(float add, float mult) {
+        super.setLineSpacing(add, mult);
+        mSpacingMult = mult;
+        mSpacingAdd = add;
     }
 
-    @Override
-    public void onImagePageChangeIntercept(Boolean forward) {
-        if (forward) {
-            mTextViewPager.setCurrentItem(pageNumberText + 1, true);
-            Log.d(Constant.TAG, "forward" + pageNumberText);
-        } else {
-            mTextViewPager.setCurrentItem(pageNumberText - 1, true);
-            Log.d(Constant.TAG, "back" + pageNumberText);
+    /**
+     * Set the upper text size limit and invalidate the view
+     * @param maxTextSize
+     */
+    public void setMaxTextSize(float maxTextSize) {
+        mMaxTextSize = maxTextSize;
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Return upper text size limit
+     * @return
+     */
+    public float getMaxTextSize() {
+        return mMaxTextSize;
+    }
+
+    /**
+     * Set the lower text size limit and invalidate the view
+     * @param minTextSize
+     */
+    public void setMinTextSize(float minTextSize) {
+        mMinTextSize = minTextSize;
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Return lower text size limit
+     * @return
+     */
+    public float getMinTextSize() {
+        return mMinTextSize;
+    }
+
+    /**
+     * Set flag to add ellipsis to text that overflows at the smallest text size
+     * @param addEllipsis
+     */
+    public void setAddEllipsis(boolean addEllipsis) {
+        mAddEllipsis = addEllipsis;
+    }
+
+    /**
+     * Return flag to add ellipsis to text that overflows at the smallest text size
+     * @return
+     */
+    public boolean getAddEllipsis() {
+        return mAddEllipsis;
+    }
+
+    /**
+     * Reset the text to the original size
+     */
+    public void resetTextSize() {
+        if(mTextSize > 0) {
+            super.setTextSize(TypedValue.COMPLEX_UNIT_PX, mTextSize);
+            mMaxTextSize = mTextSize;
         }
     }
 
-    private void writeNumberToSharedPrefs(String key, int number) {
-        SharedPreferences.Editor mEdit = sharedPrefs.edit();
-        mEdit.putInt(key, number);
-        mEdit.commit();
-    }
-
-    public int getPageNumber() {
-        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        return sharedPrefs.getInt(Constant.kPageNumber, 0);
-    }
+    /**
+     * Resize text after measuring
+     */
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

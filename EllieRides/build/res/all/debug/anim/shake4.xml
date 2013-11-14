@@ -2,4 +2,4 @@
     android:fromXDelta="0"
     android:toXDelta="4"
     android:duration="1000"
-    android:interpolator="@anim/cycle_4" /><!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/anim/shake4.xml -->
+    android:interpolator="@anim/cycle_4" /><!-- From: file:/C:/Users/Ryan/AndroidStudioProjects/ellierides/EllieRides/src/main/res/anim/shake4.xml -->

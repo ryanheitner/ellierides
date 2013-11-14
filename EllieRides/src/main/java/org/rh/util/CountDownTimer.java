@@ -20,10 +20,9 @@ package org.rh.util;
  */
 
 
-        import android.util.Log;
-        import android.os.Handler;
-        import android.os.SystemClock;
-        import android.os.Message;
+import android.os.Handler;
+import android.os.Message;
+import android.os.SystemClock;
 
 /**
  * Schedule a countdown until a time in the future, with
@@ -119,7 +118,7 @@ public abstract class CountDownTimer {
 
 
     // handles counting down
-    private Handler mHandler = new Handler() {
+    private final Handler mHandler = new Handler() {
 
         @Override
         public void handleMessage(Message msg) {

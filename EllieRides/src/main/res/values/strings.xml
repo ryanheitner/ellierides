@@ -11,5 +11,12 @@
     <string name="start_over">Start Over</string>
     <string name="helvetica">helvetica.ttf</string>
     <string name="mysteryquest">mysteryquest_regular.ttf</string>
-
+    <string name="page">page:</string>
+    <string name="config">values</string>
+    <string name="title_activity_parent">Info For Parents</string>
+    <string name="readByMyself">Read By Myself</string>
+    <string name="continueFromPage">Continue From Page</string>
+    <string name="readToMe">Read To Me</string>
+    <string name="autoPlay">Auto Play</string>
+    <string name="forParents">For Parents</string>
 </resources>

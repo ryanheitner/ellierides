@@ -7,4 +7,4 @@
         android:duration="1000"
         android:interpolator="@android:anim/cycle_interpolator"/>
 
-</set><!-- From: file:/Users/ryanheitner/WorkSpaceAndroid/EllieRidesProject/EllieRides/src/main/res/anim/rotate_hour.xml -->
+</set><!-- From: file:/C:/Users/Ryan/AndroidStudioProjects/ellierides/EllieRides/src/main/res/anim/rotate_hour.xml -->

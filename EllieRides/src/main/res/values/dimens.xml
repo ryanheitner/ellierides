@@ -4,5 +4,5 @@
     <dimen name="small_horizontal_margin">8dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="my_padding">20dp</dimen>
-    <dimen name="text_size">26dp</dimen>
+    <dimen name="text_size">16dp</dimen>
 </resources>

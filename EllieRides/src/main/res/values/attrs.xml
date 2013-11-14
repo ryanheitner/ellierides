@@ -1,10 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <declare-styleable name="AutoFitTextView">
-        <attr name="maxTextSize" format="dimension"/>
-        <attr name="minTextSize" format="dimension"/>
+        <attr name="maxTextSize" format="dimension" />
+        <attr name="minTextSize" format="dimension" />
     </declare-styleable>
     <declare-styleable name="ViewPagerType">
-        <attr name="view_pager_type" format="integer"/>
+        <attr name="view_pager_type" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
     </declare-styleable>
 
 </resources>

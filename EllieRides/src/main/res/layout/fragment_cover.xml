@@ -1,61 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:id="@+id/cover_layout"
     android:background="@color/green"
     android:orientation="vertical">
-    tools:context=".Main$DummySectionFragment">
-
 
     <ImageButton
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/readByMyselfButton"
-        android:paddingTop="@dimen/my_padding"
-        android:paddingBottom="@dimen/my_padding"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/read_by_myself" />
-
-    <ImageButton
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/readToMeButton"
-        android:paddingTop="@dimen/my_padding"
-        android:paddingBottom="@dimen/my_padding"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/read_to_me" />
-
-    <ImageButton
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/autoPlayButton"
-        android:paddingTop="@dimen/my_padding"
-        android:paddingBottom="@dimen/my_padding"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/autoplay_button" />
-
-    <Switch
-        android:text="Text"
-        android:id="@+id/hideTextSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="@dimen/my_padding"
-        android:paddingBottom="@dimen/my_padding"
+        android:id="@+id/readByMyselfButton"
+        android:layout_marginTop="@dimen/small_horizontal_margin"
+        android:layout_marginBottom="@dimen/small_horizontal_margin"
         android:layout_gravity="center_horizontal"
-        android:textOn="Hide"
-        android:textOff="Show" />
+        android:contentDescription="@string/readByMyself"
+        android:background="@drawable/read_by_myself" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/text_size"
+        android:id="@+id/page"
+        android:layout_width="wrap_content" />
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:progress="10"
+        android:secondaryProgress="10"
+        android:max="24"
+        android:contentDescription="@string/continueFromPage"
+        android:layout_gravity="center_horizontal" />
 
     <ImageButton
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/parentButton"
-        android:paddingTop="@dimen/my_padding"
-        android:paddingBottom="@dimen/my_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readToMeButton"
+        android:layout_marginTop="@dimen/small_horizontal_margin"
+        android:layout_marginBottom="@dimen/small_horizontal_margin"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/parent_button" />
-</LinearLayout>
+        android:contentDescription="@string/readToMe"
+        android:background="@drawable/read_to_me" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/autoPlayButton"
+        android:layout_marginTop="@dimen/small_horizontal_margin"
+        android:layout_marginBottom="@dimen/small_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/autoPlay"
+        android:background="@drawable/autoplay_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parentButton"
+        android:layout_marginTop="@dimen/small_horizontal_margin"
+        android:layout_marginBottom="@dimen/small_horizontal_margin"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/forParents"
+        android:background="@drawable/parent_button" />
+</LinearLayout>
 
