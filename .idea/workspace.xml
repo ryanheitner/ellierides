@@ -74,27 +74,288 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7f7a9ae-de42-488c-a190-59f7fa19449c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/FragmentStatePagerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Ryan.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EllieRides/proguard-project.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\java\org\rh\util\scratchpad.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\java\org\rh\util\scratchpad2.txt" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\res\raw\s_p1bak.ogg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\res\raw\s_p2bak.ogg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\res\raw\s_p3bak.ogg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\res\raw\s_p4bak.ogg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Ryan\AndroidStudioProjects\ellierides\EllieRides\src\main\res\raw\s_p5bak.ogg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-sw600dp-xhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-sw600dp-xhdpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-sw720dp-xhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-sw720dp-xhdpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-xhdpi/Thumbs.db" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-xhdpi/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal0.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal4.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/animal6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/apple0.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/apple0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/apple1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/apple1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/autoplay_button.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/autoplay_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button_b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button_b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button_c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/back_button_c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ball.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ball.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ball14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ball14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/berry.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/berry.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike12.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike12b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike12b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike13.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike13b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike13b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bike21c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bikep7.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bikep7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bird14d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/blue_ball.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/blue_ball.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bookp2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bookp2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bookp2b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/bookp2b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/books.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/books.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/broken_glass.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/broken_glass.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buffet.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buffet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buffet6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buffet6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/butterfly14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/butterfly14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/butterfly14b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/butterfly14b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buttonback.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/buttonback.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cat14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cat14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/chair.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/chair.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cherry.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cherry.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_centre_b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_centre_b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_centre_s.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_centre_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_hands_s.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/clock_hands_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cover.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/cover.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad10.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad11.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad11a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad11a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad12.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad13.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad13b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad13b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad16c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad17a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad17a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad17b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad17b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad18.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19barm.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad19barm.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad20c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad21.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dad9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie15.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie15b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie15b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie22.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadellie22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadmom8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadmom8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadmom8b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dadmom8b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dog14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dog14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dog14b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dog14b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/doll.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/doll.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/doorbell.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/doorbell.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/dove19c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10leftclosed.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10leftclosed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10leftopen.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10leftopen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10rightclosed.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10rightclosed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10rightopen.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie10rightopen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie11c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie12.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie13.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16e.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16f.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie16f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17e.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17f.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie17f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18e.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18f.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie18f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie19a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie19a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1e.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1f.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie1f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie20d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie21.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie23c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie24c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie3a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie3a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie3b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie3b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie7.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/ellie9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep2b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep2b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep4a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep4a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep4b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep4b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/elliep5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/fingertouch.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/fingertouch.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower4.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower7.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/flower7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/fork24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/fork24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button_b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button_b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button_c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/forward_button_c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grannygramps.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grannygramps.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass15.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass18.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass20.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/grass20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hand.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet130.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet130.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet131.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet131.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet132.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet132.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet133.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet133.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet134.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/helmet134.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour_hand.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour_hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour_hand_s.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hour_hand_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hourp6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/hourp6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/invisible_door_closed.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/invisible_door_closed.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/invisible_door_open.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/invisible_door_open.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/kitchen8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/kitchen8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/lamp1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/lamp1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/lamp2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/lamp2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22c.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22d.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/light22d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/little_blue_bird.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/little_blue_bird.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/milk24e.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/milk24e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/milk24f.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/milk24f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute_hand.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute_hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute_hand_s.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minute_hand_s.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minutep6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/minutep6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mom22.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mom22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mom24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mom24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momdad23.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momdad23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp4.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp6b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp6b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp7.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp7b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/momp7b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/more_hand.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/more_hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mouse.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/mouse.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/orange.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/orange.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page10.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page11.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page12.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page13.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page13.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page14.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page14.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page15.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page15.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page16.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page17.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page17.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page18.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page18.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page19.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page20.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page20.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page21.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page22.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page23.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page23.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page4.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page6b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page6b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page7.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/page9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/painting9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/painting9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/parent_button.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/parent_button.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/parent_button_small.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/parent_button_small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pear.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pear.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pedal12l.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pedal12l.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pedal12r.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pedal12r.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pendulum.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pendulum.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pendulum8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pendulum8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pirate.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pirate.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/plate24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/plate24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pot8a.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pot8a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pot8b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/pot8b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/read_by_myself.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/read_by_myself.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/read_to_me.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-hdpi/read_to_me.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/read_to_me_small.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/read_to_me_small.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p1.ogg" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p1.ogg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p2.ogg" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p2.ogg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p3.ogg" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p3.ogg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p4.ogg" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p4.ogg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p5.ogg" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/raw/s_p5.ogg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammy24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammy24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp4.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp4b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp4b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sammyp5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sandwich24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sandwich24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/seat12.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/seat12.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sink8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/sink8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/snail.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/snail.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/spanner9.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/spanner9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/squirrel.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/squirrel.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/squirrel2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/squirrel2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star1.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star3.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/star3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/table2.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/table2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/table24.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/table24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tap8.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tap8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tap8b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tap8b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/thinkp5.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/thinkp5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tracks.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tracks.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/train.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/train.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree19.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree19.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree21.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree21.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree21b.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/tree21b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/truck.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/truck.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/water.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/water.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/wheel12r.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/wheel12r.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/window.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/window.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/windowp6.png" afterPath="$PROJECT_DIR$/EllieRides/src/main/res/drawable-nodpi/windowp6.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/EllieRides.iml" afterPath="$PROJECT_DIR$/EllieRides/EllieRides.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/build/source/r/debug/org/rh/ellierides/R.java" afterPath="$PROJECT_DIR$/EllieRides/build/source/r/debug/org/rh/ellierides/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EllieRides/build.gradle" afterPath="$PROJECT_DIR$/EllieRides/build.gradle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EllieRides.iws" />
@@ -179,7 +440,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="349" class="org.rh.ellierides.Main" package="org.rh.ellierides">
+      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/CoverFragement.java" line="39" class="org.rh.ellierides.CoverFragement" package="org.rh.ellierides">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -194,7 +455,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="120" class="org.rh.ellierides.Main" package="org.rh.ellierides">
+      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="121" class="org.rh.ellierides.Main" package="org.rh.ellierides">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -209,7 +470,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="625" class="org.rh.ellierides.Main.TextPagerAdapter" package="org.rh.ellierides">
+      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="235" class="org.rh.ellierides.Main" package="org.rh.ellierides">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -224,7 +485,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="645" class="org.rh.ellierides.Main.TextPagerAdapter" package="org.rh.ellierides">
+      <breakpoint url="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" line="246" class="org.rh.ellierides.Main" package="org.rh.ellierides">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -293,82 +554,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Page0Fragement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page0Fragement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="578">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page1Fragement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page1Fragement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="5296" selection-end="5296" vertical-scroll-proportion="0.0" vertical-offset="1700" max-vertical-offset="8041">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page2Fragement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page2Fragement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="2669">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyFragment.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="50" selection-start="1994" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="7021">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="395" column="14" selection-start="14379" selection-end="14379" vertical-scroll-proportion="0.0" vertical-offset="6715" max-vertical-offset="11543">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TextFragement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/TextFragement.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="28" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="3281">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlertController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/com/android/internal/app/AlertController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="0" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15572">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnimationDrawableCallback.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AnimationDrawableCallback.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/AnimationDrawableCallback.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="15" selection-start="499" selection-end="499" vertical-scroll-proportion="0.34343433" vertical-offset="68" max-vertical-offset="1394">
+            <state line="22" column="5" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1394">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoFitTextView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/AutoFitTextView.java">
+      <file leaf-file-name="Parent.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Parent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="39" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="782" max-vertical-offset="2618">
+            <state line="9" column="13" selection-start="232" selection-end="232" vertical-scroll-proportion="0.16152018" vertical-offset="0" max-vertical-offset="884">
               <folding />
             </state>
           </provider>
@@ -418,6 +616,62 @@
               <option name="externalSystemIdString" value="GRADLE" />
               <option name="taskNames">
                 <list>
+                  <option value="assembleDebug" />
+                </list>
+              </option>
+            </ExternalSystemSettings>
+          </option>
+        </ExternalTaskExecutionInfo>
+        <ExternalTaskExecutionInfo>
+          <option name="executorId" value="Run" />
+          <option name="settings">
+            <ExternalSystemSettings>
+              <option name="externalProjectPath" value="$PROJECT_DIR$" />
+              <option name="externalSystemIdString" value="GRADLE" />
+              <option name="taskNames">
+                <list>
+                  <option value="compileDebug" />
+                </list>
+              </option>
+            </ExternalSystemSettings>
+          </option>
+        </ExternalTaskExecutionInfo>
+        <ExternalTaskExecutionInfo>
+          <option name="executorId" value="Run" />
+          <option name="settings">
+            <ExternalSystemSettings>
+              <option name="externalProjectPath" value="$PROJECT_DIR$" />
+              <option name="externalSystemIdString" value="GRADLE" />
+              <option name="taskNames">
+                <list>
+                  <option value="compileDebugAidl" />
+                </list>
+              </option>
+            </ExternalSystemSettings>
+          </option>
+        </ExternalTaskExecutionInfo>
+        <ExternalTaskExecutionInfo>
+          <option name="executorId" value="Debug" />
+          <option name="settings">
+            <ExternalSystemSettings>
+              <option name="externalProjectPath" value="$PROJECT_DIR$" />
+              <option name="externalSystemIdString" value="GRADLE" />
+              <option name="taskNames">
+                <list>
+                  <option value="compileDebugAidl" />
+                </list>
+              </option>
+            </ExternalSystemSettings>
+          </option>
+        </ExternalTaskExecutionInfo>
+        <ExternalTaskExecutionInfo>
+          <option name="executorId" value="Run" />
+          <option name="settings">
+            <ExternalSystemSettings>
+              <option name="externalProjectPath" value="$PROJECT_DIR$" />
+              <option name="externalSystemIdString" value="GRADLE" />
+              <option name="taskNames">
+                <list>
                   <option value="build" />
                 </list>
               </option>
@@ -447,20 +701,6 @@
               <option name="taskNames">
                 <list>
                   <option value="assembleRelease" />
-                </list>
-              </option>
-            </ExternalSystemSettings>
-          </option>
-        </ExternalTaskExecutionInfo>
-        <ExternalTaskExecutionInfo>
-          <option name="executorId" value="Run" />
-          <option name="settings">
-            <ExternalSystemSettings>
-              <option name="externalProjectPath" value="$PROJECT_DIR$/EllieRides" />
-              <option name="externalSystemIdString" value="GRADLE" />
-              <option name="taskNames">
-                <list>
-                  <option value="clean" />
                 </list>
               </option>
             </ExternalSystemSettings>
@@ -1120,6 +1360,13 @@
       </map>
     </option>
   </component>
+  <component name="HgRememberedInputs">
+    <option name="repositoryUrls">
+      <list>
+        <option value="https://ryanheitner@bitbucket.org/ryanheitner/ellierides_android_mercurial" />
+      </list>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -1137,43 +1384,43 @@
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/CountDownTimer.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/TextDrawable.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyViewPager.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page2Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page3Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page22Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/Utilities.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Constant.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page0Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page14Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page21Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page16Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page4Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page6Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/ModelController.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page23Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page5Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page7Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page8Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page1Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/proguard-project.txt" />
         <option value="$PROJECT_DIR$/EllieRides/build.gradle" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/CoverFragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page12Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/LayeredImageView.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyFragment.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page10Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page11Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/FragmentStatePagerAdapter.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/TextFragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page0Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page1Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page2Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page3Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page5Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page4Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page6Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page7Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page8Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page13Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page14Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page15Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page16Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page17Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page18Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page19Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page20Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page21Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page23Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page24Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyFragment.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page12Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page9Fragement.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/FragmentStatePagerAdapter.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page10Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page11Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page19Fragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page22Fragement.java" />
         <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java" />
-        <option value="$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/TextFragement.java" />
+        <option value="$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -1234,134 +1481,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EllieRides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ellierides" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Problems" />
         <subPane subId="Project Files">
@@ -1561,6 +1680,130 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EllieRides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rh" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ellierides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -1585,7 +1828,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.signings/ellie-rides.keystore" />
+    <property name="last_opened_file_path" value="C:/temp" />
     <property name="DEBUGGABLE_DEVICE" value="C8D15E2B5B5B" />
     <property name="DEBUGGABLE_PROCESS" value="org.rh.ellierides" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
@@ -1595,9 +1838,9 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.splitter.details.proportions" value="0.34933972" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="C8D15E2B5B5B" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -1678,42 +1921,6 @@
       <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="ellierides:EllieRides [assembleRelease]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/EllieRides" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="assembleRelease" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ellierides:EllieRides [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="externalProjectPath" value="$PROJECT_DIR$/EllieRides" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
-      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
-      <method />
-    </configuration>
     <configuration default="false" name="ellierides [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -1724,6 +1931,66 @@
         <option name="taskNames">
           <list>
             <option value="check" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ellierides [compileDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileDebug" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ellierides [compileDebugAidl]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileDebugAidl" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskDebugRunner">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="ExternalSystemTaskRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskDebugRunner" />
+      <ConfigurationWrapper RunnerId="ExternalSystemTaskRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ellierides [assembleDebug]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="assembleDebug" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1783,19 +2050,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1821,6 +2075,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1882,7 +2149,7 @@
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
       <option name="PREFERRED_AVD" value="" />
       <option name="USE_COMMAND_LINE" value="true" />
@@ -1897,19 +2164,21 @@
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android Application.EllieRides" />
       <item index="1" class="java.lang.String" itemvalue="Gradle.ellierides [build]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.ellierides:EllieRides [assembleRelease]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.ellierides:EllieRides [clean]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.ellierides [check]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.ellierides [check]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.ellierides [compileDebug]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.ellierides [compileDebugAidl]" />
+      <item index="5" class="java.lang.String" itemvalue="Gradle.ellierides [assembleDebug]" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.ellierides [build]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.ellierides [check]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.ellierides:EllieRides [assembleRelease]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.ellierides:EllieRides [clean]" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.ellierides [assembleDebug]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.ellierides [compileDebugAidl]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.ellierides [compileDebug]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.ellierides [build]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.ellierides [check]" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
@@ -1970,7 +2239,15 @@
       <created>1384422318494</created>
       <updated>1384422318494</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="before oom consult">
+      <created>1385012307554</created>
+      <updated>1385012307554</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Live">
+      <created>1385278784172</created>
+      <updated>1385278784172</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1998,32 +2275,32 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3247734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38066465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33987916" sideWeight="0.649919" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3802198" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33736265" sideWeight="0.6491086" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18482251" sideWeight="0.21929824" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4003021" sideWeight="0.31118315" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3791209" sideWeight="0.18421052" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32857144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1904762" sideWeight="0.3129689" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4592145" sideWeight="0.31118315" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37311178" sideWeight="0.7382496" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3429003" sideWeight="0.68881685" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20502432" sideWeight="0.7082907" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31318682" sideWeight="0.3249694" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37878788" sideWeight="0.7374392" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3776435" sideWeight="0.81578946" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.08995138" sideWeight="0.7082907" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32326284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2858017" sideWeight="0.79664177" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.24602203" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.24583334" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17809057" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35332254" sideWeight="0.78070176" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38066465" sideWeight="0.6701783" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30226904" sideWeight="0.78070176" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3802198" sideWeight="0.6689106" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39570552" sideWeight="0.6354626" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48333332" sideWeight="0.6658507" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48131868" sideWeight="0.6658507" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47916666" sideWeight="0.7093023" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -2041,12 +2318,13 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <MESSAGE value="getting there" />
     <MESSAGE value="Sorting out text and paging issues." />
     <MESSAGE value="Apple going for repair&#10;" />
     <MESSAGE value="pre submit" />
-    <option name="LAST_COMMIT_MESSAGE" value="pre submit" />
+    <MESSAGE value="before oom consult" />
+    <MESSAGE value="Live" />
+    <option name="LAST_COMMIT_MESSAGE" value="Live" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2057,336 +2335,291 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/TouchableSpan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="4" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="55" max-vertical-offset="544" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/AutoSizeFontTextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="14" selection-start="4642" selection-end="4642" vertical-scroll-proportion="0.0" vertical-offset="2269" max-vertical-offset="3111" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page21Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="541" selection-end="541" vertical-scroll-proportion="0.283054" vertical-offset="1" max-vertical-offset="2465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page23Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="16" selection-start="2871" selection-end="2871" vertical-scroll-proportion="0.2700186" vertical-offset="1113" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page7Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="0" selection-start="3918" selection-end="3918" vertical-scroll-proportion="0.0" vertical-offset="1385" max-vertical-offset="2295" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page8Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="0" selection-start="7260" selection-end="7260" vertical-scroll-proportion="0.0" vertical-offset="2167" max-vertical-offset="3876" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Icons/Ride A Bike/device-2013-11-15-121547.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://C:/Icons/Ride A Bike/device-2013-11-15-121424.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="22" selection-end="22" vertical-scroll-proportion="0.030909091" vertical-offset="0" max-vertical-offset="550" />
-      </provider>
-    </entry>
-    <entry file="file://C:/Icons/Ride A Bike/device-2013-11-15-121113.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="550">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561" />
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/layout/fragment_text.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="374" />
-      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="611" />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/layout/page0.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
       </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/layout/fragment_cover.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1224">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/device-2013-11-17-145507.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyViewPager.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values/dimens.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="54" selection-start="801" selection-end="801" vertical-scroll-proportion="-3.5632753" vertical-offset="1691" max-vertical-offset="2584" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="317" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/TextDrawable.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values/colors.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="13" selection-start="2314" selection-end="2314" vertical-scroll-proportion="0.31007752" vertical-offset="203" max-vertical-offset="7089" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="317" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values-sw600dp/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="317" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values/integer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="317" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/res/values/attrs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ellierides.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="521" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/proguard-project.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="18" selection-start="204" selection-end="204" vertical-scroll-proportion="-7.48" vertical-offset="0" max-vertical-offset="1105">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="54" selection-start="735" selection-end="735" vertical-scroll-proportion="0.0" vertical-offset="316" max-vertical-offset="884">
-          <folding>
-            <element signature="e#838#856#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page3Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2040" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page4Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="1" max-vertical-offset="2006" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page5Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/android/widget/ImageView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="371" column="0" selection-start="12898" selection-end="12898" vertical-scroll-proportion="0.0" vertical-offset="5239" max-vertical-offset="20417" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page12Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="37" selection-start="8429" selection-end="8478" vertical-scroll-proportion="0.0" vertical-offset="2815" max-vertical-offset="4488">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/CoverFragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="7" selection-start="458" selection-end="458" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="2057" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/ModelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2193">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="15" column="0" selection-start="705" selection-end="705" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/LayeredImageView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="500" column="15" selection-start="15675" selection-end="15675" vertical-scroll-proportion="-4.72" vertical-offset="8076" max-vertical-offset="8568">
+        <state line="507" column="0" selection-start="15985" selection-end="15985" vertical-scroll-proportion="0.0" vertical-offset="7597" max-vertical-offset="8194" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page0Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="7" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page1Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="9" selection-start="4094" selection-end="4094" vertical-scroll-proportion="-18.68" vertical-offset="1029" max-vertical-offset="7395" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page3Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="7" selection-start="1365" selection-end="1365" vertical-scroll-proportion="-8.181818" vertical-offset="264" max-vertical-offset="2176" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page4Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="46" selection-start="1153" selection-end="1153" vertical-scroll-proportion="-5.4" vertical-offset="264" max-vertical-offset="2006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page6Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="228" column="0" selection-start="9654" selection-end="9654" vertical-scroll-proportion="-7.9454546" vertical-offset="3439" max-vertical-offset="3978" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page7Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="5427" selection-end="5427" vertical-scroll-proportion="-8.181818" vertical-offset="1930" max-vertical-offset="2482" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page8Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="17" selection-start="5816" selection-end="5816" vertical-scroll-proportion="-7.9454546" vertical-offset="1484" max-vertical-offset="4454" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page13Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="0" selection-start="4217" selection-end="4217" vertical-scroll-proportion="-8.181818" vertical-offset="1607" max-vertical-offset="2159">
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#2628#2629#0" expanded="false" />
-            <element signature="e#2661#2662#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page14Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="3" selection-start="2482" selection-end="2482" vertical-scroll-proportion="-7.9454546" vertical-offset="787" max-vertical-offset="5338" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page15Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="191" column="0" selection-start="7440" selection-end="7440" vertical-scroll-proportion="-8.181818" vertical-offset="2797" max-vertical-offset="3349" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page16Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1375" selection-end="1586" vertical-scroll-proportion="-6.7090907" vertical-offset="583" max-vertical-offset="3060" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page17Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="59" selection-start="2368" selection-end="2368" vertical-scroll-proportion="-7.9454546" vertical-offset="702" max-vertical-offset="3434" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/ResumeDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page18Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2566" selection-end="2566" vertical-scroll-proportion="-7.9454546" vertical-offset="821" max-vertical-offset="2686" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page20Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="0" selection-start="6905" selection-end="6905" vertical-scroll-proportion="-8.181818" vertical-offset="2627" max-vertical-offset="3179" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page21Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="155" column="0" selection-start="5638" selection-end="5638" vertical-scroll-proportion="-8.181818" vertical-offset="2185" max-vertical-offset="2737" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page23Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="109" column="1" selection-start="3517" selection-end="3517" vertical-scroll-proportion="-8.181818" vertical-offset="1403" max-vertical-offset="1989" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page24Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="0" selection-start="9455" selection-end="9455" vertical-scroll-proportion="-7.9454546" vertical-offset="3456" max-vertical-offset="3995" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyViewPager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2584" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="10" selection-start="1689" selection-end="1689" vertical-scroll-proportion="-2.9272728" vertical-offset="672" max-vertical-offset="7123" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page9Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="137" column="37" selection-start="5818" selection-end="5883" vertical-scroll-proportion="-1.4545455" vertical-offset="2249" max-vertical-offset="3706" />
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/android/app/ActivityThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3867" column="0" selection-start="163231" selection-end="163231" vertical-scroll-proportion="0.3320965" vertical-offset="63350" max-vertical-offset="82841" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page2Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="18" selection-start="1111" selection-end="1111" vertical-scroll-proportion="0.23005566" vertical-offset="505" max-vertical-offset="2618" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page5Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="48" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page12Fragement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="38" selection-start="8557" selection-end="8625" vertical-scroll-proportion="0.0" vertical-offset="3070" max-vertical-offset="4641">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page10Fragement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="58" selection-start="9045" selection-end="9045" vertical-scroll-proportion="0.0" vertical-offset="2904" max-vertical-offset="4165">
+        <state line="197" column="28" selection-start="8731" selection-end="8804" vertical-scroll-proportion="0.0" vertical-offset="2737" max-vertical-offset="4148">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page11Fragement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="58" selection-start="5073" selection-end="5073" vertical-scroll-proportion="0.0" vertical-offset="1629" max-vertical-offset="3825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page13Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="81" selection-start="3601" selection-end="3601" vertical-scroll-proportion="0.0" vertical-offset="1302" max-vertical-offset="1955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page15Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="73" selection-start="4314" selection-end="4314" vertical-scroll-proportion="0.0" vertical-offset="1455" max-vertical-offset="3043">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page17Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="81" selection-start="4408" selection-end="4408" vertical-scroll-proportion="0.0" vertical-offset="1476" max-vertical-offset="3094">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page18Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="81" selection-start="4430" selection-end="4430" vertical-scroll-proportion="0.0" vertical-offset="1680" max-vertical-offset="2431">
+        <state line="131" column="45" selection-start="5401" selection-end="5401" vertical-scroll-proportion="0.0" vertical-offset="1972" max-vertical-offset="4216">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page19Fragement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="73" selection-start="6088" selection-end="6088" vertical-scroll-proportion="0.0" vertical-offset="2322" max-vertical-offset="4777">
+        <state line="295" column="0" selection-start="10933" selection-end="10933" vertical-scroll-proportion="0.0" vertical-offset="4459" max-vertical-offset="5066">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page20Fragement.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page22Fragement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="81" selection-start="5373" selection-end="5373" vertical-scroll-proportion="0.0" vertical-offset="1982" max-vertical-offset="2822">
+        <state line="119" column="13" selection-start="4907" selection-end="4907" vertical-scroll-proportion="0.0" vertical-offset="1632" max-vertical-offset="2516">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page24Fragement.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Constant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="53" selection-start="3586" selection-end="3586" vertical-scroll-proportion="0.0" vertical-offset="1000" max-vertical-offset="3553">
+        <state line="13" column="36" selection-start="447" selection-end="447" vertical-scroll-proportion="0.33937824" vertical-offset="90" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page9Fragement.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/CoverFragement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="25" selection-start="7799" selection-end="7799" vertical-scroll-proportion="0.33159268" vertical-offset="2695" max-vertical-offset="3332">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page0Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0" vertical-offset="151" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page1Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="5296" selection-end="5296" vertical-scroll-proportion="0.0" vertical-offset="1347" max-vertical-offset="7140">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Page2Fragement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="2228" selection-end="2228" vertical-scroll-proportion="0.0" vertical-offset="616" max-vertical-offset="2465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/FragmentStatePagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="11" selection-start="3255" selection-end="3259" vertical-scroll-proportion="0.33277592" vertical-offset="1263" max-vertical-offset="4063">
-          <folding>
-            <element signature="e#0#8451#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2870#2891#0" expanded="false" />
-            <element signature="e#2953#2963#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/util/AutoFitTextView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="39" selection-start="1260" selection-end="1260" vertical-scroll-proportion="0.0" vertical-offset="624" max-vertical-offset="2482">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/MyFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="50" selection-start="1994" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="952" max-vertical-offset="7021">
+        <state line="39" column="0" selection-start="1386" selection-end="1386" vertical-scroll-proportion="0.0" vertical-offset="301" max-vertical-offset="2057">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="395" column="14" selection-start="14379" selection-end="14379" vertical-scroll-proportion="0.0" vertical-offset="6715" max-vertical-offset="11543">
+        <state line="270" column="0" selection-start="10582" selection-end="10582" vertical-scroll-proportion="0.0" vertical-offset="4590" max-vertical-offset="11509">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/TextFragement.java">
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="28" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.0" vertical-offset="87" max-vertical-offset="2941">
+        <state line="6" column="21" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="901">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/sdk/sources/android-19/com/android/internal/app/AlertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="0" selection-start="4226" selection-end="4226" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15572">
-          <folding />
-        </state>
+    <entry file="file://C:/temp/device-2013-11-22-105328.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/temp/device-2013-11-22-105527.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/temp/device-2013-11-22-105647.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/temp/device-2013-11-22-105731.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/temp/device-2013-11-22-105823.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://C:/temp/device-2013-11-22-105909.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/AnimationDrawableCallback.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="499" selection-end="499" vertical-scroll-proportion="0.34343433" vertical-offset="68" max-vertical-offset="1394">
+        <state line="22" column="5" selection-start="810" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EllieRides/src/main/java/org/rh/ellierides/Parent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="232" selection-end="232" vertical-scroll-proportion="0.16152018" vertical-offset="0" max-vertical-offset="884">
           <folding />
         </state>
       </provider>

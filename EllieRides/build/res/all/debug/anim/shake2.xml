@@ -1,7 +1,0 @@
-<translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fromXDelta="0"
-    android:fromYDelta="0"
-    android:toXDelta="7"
-    android:toYDelta="7"
-    android:duration="800"
-    android:interpolator="@anim/cycle_7" /><!-- From: file:/C:/Users/Ryan/AndroidStudioProjects/ellierides/EllieRides/src/main/res/anim/shake2.xml -->

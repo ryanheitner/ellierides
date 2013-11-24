@@ -1,5 +1,0 @@
-<translate xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fromXDelta="0"
-    android:toXDelta="4"
-    android:duration="1000"
-    android:interpolator="@anim/cycle_4" /><!-- From: file:/C:/Users/Ryan/AndroidStudioProjects/ellierides/EllieRides/src/main/res/anim/shake4.xml -->
